@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>manel homri</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <header>
-      <nav>
-        <a href="index.html">Manel Homri</a>
-        <ul>
+      <nav id="second">
+        <a href="test.html">Manel Homri</a>
+        <ul id="first">
           <li><a href="#about">About</a></li>
           <li><a href="#project">Projects</a></li>
           <li><a href="#Skills">Skills</a></li>
@@ -19,11 +20,12 @@
       </nav>
     </header>
     <section id="about">
-      <h1>
+      <h1 class="jsp">
         <a href="">Resume</a>
       </h1>
       <h1>About me</h1>
-      <h4>Hi there, my name is</h4>
+      <p>Hi there, my name is <br /></p>
+
       <h3>Manel Homri</h3>
       <p>
         My name is Kareem Ali. I’m the product development manager at Smart
@@ -36,12 +38,12 @@
         needs in this area and find out if you’re interested in participating in
         beta testing for a new sales app I’m developing.
       </p>
-      <img src="./img/cc.jpg" alt="" />
+      <img src="./img/cc.jpg" alt="" class="img" />
     </section>
     <section id="project">
       <h1>My projects</h1>
       <article>
-        <h3>Project Name</h3>
+        <h2>Project name</h2>
         <p>
           She had been told time and time again that the most important steps
           were the first and the last. It was something that she carried within
@@ -54,7 +56,6 @@
       </article>
       <h1>Project name</h1>
       <article>
-        <h3>Project Name</h3>
         <p>
           The headphones were on. They had been utilized on purpose. She could
           hear her mom yelling in the background, but couldn't make out exactly
@@ -66,7 +67,6 @@
       </article>
       <h1>Project name</h1>
       <article>
-        <h3>Project Name</h3>
         <p>
           The headphones were on. They had been utilized on purpose. She could
           hear her mom yelling in the background, but couldn't make out exactly
@@ -88,7 +88,6 @@
       </ol>
     </section>
     <section id="Contact">
-      <h2>Contact Me</h2>
       <form>
         <label>First Name:</label>
         <input type="text" name="firstName" />
@@ -96,7 +95,7 @@
         <input type="text" name="lastName" id="lastName" /><label>Email:</label>
         <input type="text" />
         <label>Your message:</label>
-        <textarea name="message"></textarea>
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
 
         <br />
         <!-- This button will submit the form, causing the page to redirect -->
