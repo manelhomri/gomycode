@@ -1,32 +1,143 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-
-body {
-  background-color: peachpuff;
+nav {
+  max-width: 1015px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav img {
+  height: 33px;
+  width: 268px;
+}
+.links {
+  display: flex;
+}
+.links li {
+  margin-right: 20px;
+  list-style-type: none;
+}
+.links li a {
+  color: #ababab;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 2em;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.active {
+  color: #00b39b !important;
+}
+.links li a:hover {
+  color: #00b39b;
+}
+#hero {
+  max-width: 1015px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "logo logo" "title title" "left-text right-text" "left-box right-box";
+  column-gap: 30px;
+  row-gap: 50px;
+  margin-top: 40px;
+}
+#hero img {
+  grid-area: logo;
+  justify-self: center;
+}
+#hero h1 {
+  grid-area: title;
+  justify-self: center;
+}
+.left {
+  grid-area: left-box;
+  background: #00b39b;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 1.375em 2.5em 0;
+}
+.right {
+  grid-area: right-box;
+  background: #3d83df;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 1.375em 2.5em 0;
+}
+.left-text {
+  grid-area: left-text;
+}
+.right-text {
+  grid-area: right-text;
+}
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.card {
+  max-width: 100%;
+  height: auto;
+}
+select {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0 3.5em 0 1.5em;
+  height: 40px;
+  -webkit-appearance: none;
+  text-transform: uppercase;
+  outline: 0;
+}
+.style-select {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  background: #3d83df;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #333;
+  background: #fff;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none !important;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+.card2 {
+  position: relative;
+  left: 50%;
+  max-width: 100%;
+  height: auto;
+}
+#text {
+  color: #00ccb1;
 }
 
-#first li {
-  display: inline;
+.cards {
+  max-width: 1015px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin-top: 40px;
+  column-gap: 50px;
+  row-gap: 50px;
 }
 
-#first {
-  margin: 0;
-  padding: 0;
+.box1 img {
+  width: 100%;
+  height: auto;
 }
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-}
-.jsp {
-  color: red;
-}
-.img {
-  width: 200px;
-  height: 250px;
+.box {
+  width: 100%;
+  height: auto;
 }
 
-form input {
-  display: block;
-}
-form textarea {
-  display: block;
+.bottom {
+  display: flex;
+  justify-content: space-between;
 }
